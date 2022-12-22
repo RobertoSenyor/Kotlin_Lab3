@@ -12,22 +12,22 @@ object Test_kotlin {
     @Throws(Exception::class)
     @JvmStatic
     fun main(args: Array<String>) {
-        testInt()
-        println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n")
-        testPoint2D()
-//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
-//        testTimestampSort();
-//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
-//        testTimestampGetOnPosition();
-//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
-//        testTimestampInsertOnPosition();
+//        testInt()
+//        println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n")
+//        testPoint2D()
+        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+        testTimestampSort();
+        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+        testTimestampGetOnPosition();
+        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+        testTimestampInsertOnPosition();
     }
 
     private fun testTimestampInsertOnPosition() {
         try {
             FileWriter("src/kotlin_pack/testInsertOnPos.csv", false).use { writer ->
                 var num_elements = 10000
-                while (num_elements <= 50000) {
+                while (num_elements <= 500000) {
                     val Biglist = BigList()
                     println("\n-----testTimestampInsertOnPosition-----")
                     for (j in 0..9) {
@@ -50,7 +50,7 @@ object Test_kotlin {
                     writer.write(text)
                     writer.append('\n')
                     writer.flush()
-                    num_elements += 500
+                    num_elements += 10000
                     Biglist.remove_list()
                 }
             }
@@ -63,7 +63,7 @@ object Test_kotlin {
         try {
             FileWriter("src/kotlin_pack/testGetOnPos.csv", false).use { writer ->
                 var num_elements = 10000
-                while (num_elements <= 50000) {
+                while (num_elements <= 500000) {
                     val Biglist = BigList()
                     println("\n-----testTimestampGetOnPosition-----")
                     for (j in 0..9) {
@@ -86,7 +86,7 @@ object Test_kotlin {
                     writer.write(text)
                     writer.append('\n')
                     writer.flush()
-                    num_elements += 500
+                    num_elements += 10000
                     Biglist.remove_list()
                 }
             }
@@ -99,7 +99,7 @@ object Test_kotlin {
         try {
             FileWriter("src/kotlin_pack/testSort.csv", false).use { writer ->
                 var num_elements = 1000
-                while (num_elements <= 20000) {
+                while (num_elements <= 500000) {
                     val Biglist = BigList()
                     println("\n-----testTimestampSort-----")
                     for (j in 0..9) {
@@ -121,7 +121,7 @@ object Test_kotlin {
                     writer.write(text)
                     writer.append('\n')
                     writer.flush()
-                    num_elements += 500
+                    num_elements += 10000
                     Biglist.remove_list()
                 }
             }
