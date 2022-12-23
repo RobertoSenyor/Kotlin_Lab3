@@ -15,12 +15,12 @@ object Test_kotlin {
 //        testInt()
 //        println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n")
 //        testPoint2D()
-        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
         testTimestampSort();
-        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
-        testTimestampGetOnPosition();
-        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
-        testTimestampInsertOnPosition();
+//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+//        testTimestampGetOnPosition();
+//        System.out.println("\n\nSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLITSPLIT\n\n");
+//        testTimestampInsertOnPosition();
     }
 
     private fun testTimestampInsertOnPosition() {
@@ -121,7 +121,7 @@ object Test_kotlin {
                     writer.write(text)
                     writer.append('\n')
                     writer.flush()
-                    num_elements += 10000
+                    num_elements += 1000
                     Biglist.remove_list()
                 }
             }
